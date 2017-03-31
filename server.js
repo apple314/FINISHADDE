@@ -111,5 +111,5 @@ function getPair(me,pairs_var) {
 }
 
 function handler(req,res) {
-    res.end('Adde.hr rules!');
+    res.end('Adde.hr rules! new');
 }
