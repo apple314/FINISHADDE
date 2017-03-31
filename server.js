@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 var app = require('http').createServer(handler);
 var io = require('socket.io').listen(app);
-app.listen(8888, '0.0.0.0');
+var port = process.env.PORT || 8080;
+
+//'0.0.0.0' omited local tesitng
+app.listen(port);
+
 var users = {};
 var pairs = [];
 
